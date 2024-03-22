@@ -22,6 +22,7 @@ const RefForm = () => {
         <br />
         <input
           ref={emailRef}
+          defaultValue={"fojoni@sojoni.com"}
           type="email"
           name="email"
           id=""

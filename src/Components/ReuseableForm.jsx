@@ -1,14 +1,10 @@
-import useInputState from "../Hooks/useInputState";
-
-const HookForm = () => {
-  //   const [name, handleNameChange] = useInputState("Rojoni Hooked");
-  const emailState = useInputState("rojoni@sojili.go");
+const ReuseableForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("form data", emailState.value);
   };
   return (
     <div>
+      <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <input
           value={name}
@@ -25,4 +21,4 @@ const HookForm = () => {
   );
 };
 
-export default HookForm;
+export default ReuseableForm;
